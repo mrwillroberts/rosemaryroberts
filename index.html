@@ -108,7 +108,7 @@
                     <h1>December Offer</h1>
                     <p>This month I am offering a FREE consultation, FREE taster session, AND 30% OFF your first
                         Personal Training package</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign Up &raquo;</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="#contact" role="button">Sign Up &raquo;</a></p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
             <img class="img-circle" src="geese.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Sign-up</h2>
             <p>For more information, please fill in the form by clicking Contact Me below</p>
-            <p><a class="btn btn-default" href="#" role="button">Contact Me &raquo;</a></p>
+            <p><a class="btn btn-default" href="#contact" role="button">Contact Me &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
     </div><!-- /.row -->
@@ -226,6 +226,37 @@
             </a>
         </div>
     </div>
+
+    <hr class="featurette-divider">
+
+    <form id="contact" action="https://formspree.io/user@email.com"
+          method="POST">
+        <div class="form-group">
+            <label for="inputName">Full Name</label>
+            <input type="text" class="form-control" id="inputName" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input name="_replyto" type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="inputPhone">Contact No</label>
+            <input type="tel" class="form-control" id="inputPhone" name="phone_number" placeholder="Your Contact Number">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="newsletter_subscription" checked>Subscribe to Sunday newsletter
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control" id="inputMessage" rows="4" cols="50" name="message" placeholder="Your message..."></textarea>
+        </div>
+        <input type="hidden" name="_next" value="index.html" />
+        <input type="hidden" name="_subject" value="Rosemary Roberts Form Submission" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <button type="submit" value="Send" class="btn btn-default">Send</button>
+    </form>
 
     <hr class="featurette-divider">
 
