@@ -50,7 +50,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background: url('location.jpg');
+  background: url('img/location.jpg');
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;
